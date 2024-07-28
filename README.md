@@ -72,9 +72,7 @@ yarn add node-sass axios luxon
 4. Create a `.env` file in the root directory and add your Meteosource API key:
 
 ```
-REACT_APP__API_KEY_1=your_api_key_here
-REACT_APP__API_KEY_2=your_api_key_here
-REACT_APP__API_KEY_3=your_api_key_here
+REACT_APP__API_KEY_=your_api_key_here
 ```
 
 ### Usage
