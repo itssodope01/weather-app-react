@@ -1,0 +1,34 @@
+@use '../base/reset';
+@use '../themes/themes';
+
+.App-dark,
+.App-light {
+  background-color: var(--main-bg-color);
+  color: var(--primary-text-color);
+
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: auto; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-text-color);
+  border-radius: 10px;
+}
+
+.scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-text-color) transparent;
+}
+
+.scrollable-element {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-text-color) transparent;
+}
