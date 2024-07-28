@@ -11,7 +11,7 @@ async function makeRequest(options) {
     } catch (error) {
         if (error.response && error.response.status === 429) {
             // Rate limit exceeded
-            console.log('Limit exceeded');
+            console.log('API Limit exceeded');
         } else {
             console.error('Error fetching data:', error);
             throw error;

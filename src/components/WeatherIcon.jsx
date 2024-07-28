@@ -5,7 +5,7 @@ function WeatherIcon({ iconNumber, summary }) {
   const { dark } = useContext(ThemeContext);
     return (
       <img
-        src={`${process.env.PUBLIC_URL}/dist/weather_icons/set0${dark ? '2' : '3'}/big/${iconNumber}.png`}
+        src={`src/assets/weather_icons/set0${dark ? '2' : '3'}/big/${iconNumber}.png`}
         alt={summary}
         draggable={false}
       />

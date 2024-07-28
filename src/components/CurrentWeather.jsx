@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import {getCurrentWeather} from '../api';
 import WeatherIcon from './WeatherIcon.jsx';
 import WeatherContext from '../context/weather.context';
 import '../styles/components/CurrentWeather.scss';
