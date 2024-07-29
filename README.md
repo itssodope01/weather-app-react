@@ -47,8 +47,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/weather-app.git
-cd weather-app
+git clone https://github.com/itssodope01/weather-app-react.git
+cd weather-app-react
 ```
 
 2. Install the dependencies:
@@ -64,9 +64,10 @@ This command will install all necessary dependencies, including React, SCSS, Axi
 3. If you need to install any of these dependencies manually, you can do so with the following commands:
 
 ```
-npm install node-sass axios luxon
+npm install sass axios luxon
 # or
-yarn add node-sass axios luxon
+yarn add sass axios luxon
+
 ```
 
 4. Create a `.env` file in the root directory and add your Meteosource API key:
@@ -79,12 +80,12 @@ VITE_REACT_APP_API_KEY=your_api_key_here
 1. Start the development server:
 
 ```
-npm start
+npm run dev
 # or
-yarn start
+yarn dev
 ```
 
-2. Open http://localhost:3000 to view it in the browser.
+2. Open http://localhost:5173/weather-app-react/ to view it in the browser.
 
 ## API Optimization
 To reduce the number of API calls and improve the efficiency of data fetching, several optimization strategies have been implemented:
