@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { DateTime } from 'luxon';
-import WeatherIcon from './WeatherIcon';
-import WeatherContext from '../context/weather.context';
+import WeatherIcon from './WeatherIcon.jsx';
+import WeatherContext from '../context/weather.context.jsx';
 
 const HourlyForecastWidget = ({ data, currentHour }) => {
     const { date, icon, summary, temperature, precipitation, wind } = data;

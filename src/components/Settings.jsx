@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import '../styles/components/Settings.scss';
-import ThemeContext from '../context/theme.context';
+import ThemeContext from '../context/theme.context.jsx';
 import { MEASUREMENT_SYSTEMS } from '../utils';
-import WeatherContext from '../context/weather.context';
+import WeatherContext from '../context/weather.context.jsx';
 
 const Settings = () => {
     const [openSettings, setOpenSettings] = useState(false);

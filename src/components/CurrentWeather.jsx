@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import WeatherIcon from './WeatherIcon.jsx';
-import WeatherContext from '../context/weather.context';
+import WeatherContext from '../context/weather.context.jsx';
 import '../styles/components/CurrentWeather.scss';
 
 const CurrentWeather = ({data}) => {

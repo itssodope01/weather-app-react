@@ -1,4 +1,4 @@
-import ThemeContext from "../context/theme.context";
+import ThemeContext from "../context/theme.context.jsx";
 import { useContext } from "react";
 
 function WeatherIcon({ iconNumber, summary }) {

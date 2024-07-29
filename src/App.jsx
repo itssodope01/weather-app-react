@@ -2,7 +2,7 @@ import Header from './components/Header.jsx';
 import Weather from './components/Weather.jsx';
 import './styles/components/App.scss';
 import { useContext } from 'react';
-import ThemeContext from './context/theme.context';
+import ThemeContext from './context/theme.context.jsx';
 
 function App() {
 

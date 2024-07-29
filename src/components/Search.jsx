@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect, useRef } from 'react';
 import '../styles/components/Search.scss';
 import { searchPlace } from '../api';
-import WeatherContext from '../context/weather.context';
+import WeatherContext from '../context/weather.context.jsx';
 
 const CACHE_KEY = 'searchCache';
 const MAX_CACHE_SIZE = 100;

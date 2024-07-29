@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/components/Header.scss';
-import Search from './Search';
-import Settings from './Settings';
-import Place from './Place';
-import useIsMobile from './useIsMobile';
+import Search from './Search.jsx';
+import Settings from './Settings.jsx';
+import Place from './Place.jsx';
+import useIsMobile from './useIsMobile.jsx';
 
 const Header = () => {
   const isMobile = useIsMobile();

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = import.meta.env.VITE_REACT_APP_API_KEY;
 
 async function makeRequest(options) {
     console.log('Making request with API');
@@ -22,7 +22,7 @@ async function makeRequest(options) {
 async function getWeatherData(endpoint, place_id, measurementSystem) {
     const options = {
         method: 'GET',
-        url: `https://ai-weather-by-meteosource.p.rapidapi.com/${endpoint}`,
+        url: `/api/${endpoint}`, // Use '/api' to match the proxy rule
         params: {
             place_id: place_id,
             timezone: 'auto',
@@ -40,7 +40,7 @@ async function getWeatherData(endpoint, place_id, measurementSystem) {
 async function searchPlace(place) {
     const options = {
         method: 'GET',
-        url: 'https://ai-weather-by-meteosource.p.rapidapi.com/find_places',
+        url: '/api/find_places',
         params: {
             text: place,
             language: 'en'
@@ -56,7 +56,7 @@ async function searchPlace(place) {
 async function searchNearestPlace(lat, lon) {
     const options = {
         method: 'GET',
-        url: 'https://ai-weather-by-meteosource.p.rapidapi.com/nearest_place',
+        url: '/api/nearest_place',
         params: {
             lat: lat.toString(),
             lon: lon.toString(),

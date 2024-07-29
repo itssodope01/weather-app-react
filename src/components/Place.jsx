@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { DateTime } from 'luxon';
-import WeatherContext from '../context/weather.context';
+import WeatherContext from '../context/weather.context.jsx';
 
 const Place = () => {
     const { place } = useContext(WeatherContext);

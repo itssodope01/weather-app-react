@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
 import '../styles/components/Forecast.scss';
-import HourlyForecastWidget from './HourlyForecastWidget';
-import DailyForecastWidget from './DailyForecastWidget';
-import HorizontallyScrollable from './HorizontallyScrollable';
-import WeatherContext from '../context/weather.context';
+import HourlyForecastWidget from './HourlyForecastWidget.jsx';
+import DailyForecastWidget from './DailyForecastWidget.jsx';
+import HorizontallyScrollable from './HorizontallyScrollable.jsx';
+import WeatherContext from '../context/weather.context.jsx';
 import { DateTime } from 'luxon';
 
 const Forecast = ({ type, title, data }) => {
